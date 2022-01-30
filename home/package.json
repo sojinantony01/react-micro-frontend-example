@@ -20,7 +20,7 @@
     "webpack-server": "^0.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "webpack serve",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
