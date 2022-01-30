@@ -9,6 +9,7 @@ module.exports = {
   devServer: {
     static: path.join(__dirname, 'dist'),
     port: 3000,
+    historyApiFallback: true
   },
   output: {
     publicPath: 'auto',
@@ -40,7 +41,7 @@ module.exports = {
         Routing:
           'Routing@http://localhost:3002/remoteEntry.js',
       },
-      shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
+      shared: { react: { singleton: true }, 'react-dom': { singleton: true },'react-router-dom' : { singleton: true } },
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
