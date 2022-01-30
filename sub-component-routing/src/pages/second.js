@@ -3,7 +3,7 @@ import React from 'react'
 
 function Second() {
   return (
-    <div className="section">
+    <div className="">
       Second screen
     </div>
   );
